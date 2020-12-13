@@ -1,0 +1,8 @@
+.shrink {
+
+    transform: scale(0.8);
+
+}
+.remove{
+    display: none;
+}
