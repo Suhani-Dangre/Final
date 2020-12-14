@@ -42,7 +42,7 @@ function getRandomInt(max){
     let verb3 = prompt('Enter a verb in past tense')
     let story1El = document.getElementById('story1')
     story1El.classList.remove('remove')
-    //Final Story
+    
     story1El.innerHTML=`Yesterday, ${person1} and I went to the park. On our way to the ${adj1} park, we saw a ${adj2} ${noun1} on a bike.
     We also saw big ${adj3} balloons tied to a ${noun2}. Once we got to the ${adj1} park, the sky turned ${color1}. It started to ${verb1}
     and ${verb2}. ${person1} and I ${verb3} all the way home. Tommorow, we will try to go to the ${adj1} park again, and hopefully it dosn't
@@ -52,6 +52,7 @@ function getRandomInt(max){
     if (randomNumber === 6){
         drawing1El.classList.remove('remove')
     }
+
     if (randomNumber === 7){
         drawing2El.classList.remove('remove')
     }

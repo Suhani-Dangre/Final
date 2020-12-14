@@ -8,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-    background('wheat')
+    background(30)
 
     drawShapes()
 
@@ -20,7 +20,7 @@ function draw() {
 }
 
 function drawShapes() {
-    stroke('blue')
+    stroke('lightgreen')
     strokeWeight(10)
     shapes.forEach(shape => {
         for (let i = 0; i < shape.length - 1; i++) {
@@ -34,15 +34,15 @@ function drawShapes() {
 }
 
 function drawMouseDot() {
-    fill('cyan')
+    fill('pink')
     if (currentPointIsCloseToFirst()) {
-        fill('purple')
+        fill('yellow')
     }
     noStroke()
 
     circle(mouseX, mouseY, size)
 
-    stroke('white')
+    stroke('orange')
     strokeWeight(10)
 
     line(mouseX, mouseY, 
@@ -60,7 +60,7 @@ function distance(pt1, pt2) {
 }
 
 function drawDots() {
-    fill('darkred')
+    fill('red')
     noStroke()
     
     points.forEach(point => {
@@ -69,7 +69,7 @@ function drawDots() {
 }
 
 function drawLines() {
-    stroke('gray')
+    stroke('purple')
     strokeWeight(10)
 
     for (let i = 0; i < points.length - 1; i++) {
